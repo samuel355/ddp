@@ -1192,7 +1192,6 @@ p {
 
 .navbar-nav .nav-item a {
     font-size: 16px;
-    color: #051441;
     transition: all .3s ease-out 0s;
     position: relative;
     padding: 32px 15px;
@@ -1215,7 +1214,7 @@ p {
 @media only screen and (min-width:768px) and (max-width:991px),
 (max-width:767px) {
     .navbar-nav .nav-item a {
-        color: #3a0ca3;
+        color: #333;
         display: flex;
         justify-content: space-between;
         padding: 10px 0

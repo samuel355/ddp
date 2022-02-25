@@ -865,29 +865,24 @@ Design Ethics & Clarity Over Solution System</a></h4>
         <div class="container">
             <div class="row ">
                 <div class="col-lg-6 col-12">
-
                     <div class="subscribe-text wow fadeInLeft" data-wow-delay=".3s">
                         <h6>Sign up for Newsletter</h6>
-                        <p class="">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu,<br> homero alterum.</p>
+                        <p class="">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</p>
                     </div>
-
                 </div>
                 <div class="col-lg-6 col-12">
-
                     <div class="subscribe-form wow fadeInRight" data-wow-delay=".5s">
                         <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
                             <input name="email" placeholder="Your email address" class="common-input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'" required="" type="email">
                             <div class="button">
-                                <button class="btn mouse-dir white-bg">Subscribe Now! <span class="dir-part"></span></button>
+                                <button class="btn mouse-dir white-bg"> Subscribe Now <span class="dir-part"></span></button>
                             </div>
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
-
 
     <?php include_once "include/footer.php" ?>
 
@@ -896,7 +891,6 @@ Design Ethics & Clarity Over Solution System</a></h4>
         <i class="lni lni-chevron-up"></i>
     </a>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
@@ -905,6 +899,7 @@ Design Ethics & Clarity Over Solution System</a></h4>
     <script src="assets/js/imagesloaded.min.js"></script>
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/main.js"></script>
+
     <script type="text/javascript">
         //========= glightbox
         GLightbox({
