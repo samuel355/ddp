@@ -1130,7 +1130,7 @@ p {
 .navbar-toggler .toggler-icon {
     width: 30px;
     height: 2px;
-    background-color: #222;
+    background-color: #3a0ca3;
     display: block;
     margin: 5px 0;
     position: relative;
@@ -1364,7 +1364,7 @@ p {
 
 .hero-slider {
     position: relative;
-    background: #3e54ff08
+    background: #3e54ff08 
 }
 
 .hero-slider .single-slider {
@@ -1379,8 +1379,7 @@ p {
     position: absolute;
     content: "";
     right: 0;
-    width: 50%;
-    background-image: url(../images/hero-bg.jpg);
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1389,6 +1388,11 @@ p {
     top: 0;
     z-index: -1;
     border-radius: 0
+}
+@media only screen and (max-width: 767px) {
+    .slide-image{
+        display: none;
+    }
 }
 
 .hero-slider .hero-text {
@@ -1457,6 +1461,7 @@ p {
 .hero-slider .hero-image {
     margin-top: 175px
 }
+
 
 .hero-slider .home-slider {
     position: relative
@@ -2142,7 +2147,7 @@ span.circle {
 }
 
 .call-action.overlay:before {
-    background: #000;
+    background: rgb(43, 43, 43);
     opacity: .9;
     z-index: -1
 }

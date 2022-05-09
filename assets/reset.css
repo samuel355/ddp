@@ -223,7 +223,7 @@ th {
 
 .breadcrumbs:before {
     content: '';
-    background-color: #000;
+    background-color: #3a0ca3;
     opacity: .9;
     position: absolute;
     top: 0;
@@ -262,7 +262,7 @@ th {
     bottom: 0;
     height: 2px;
     width: 80px;
-    background: #3a0ca3
+    background: #fff
 }
 
 .breadcrumbs .breadcrumbs-content .breadcrumb-nav {
@@ -272,7 +272,7 @@ th {
     padding: 0;
     display: block;
     display: inline-block;
-    float: right
+    float: right;
 }
 
 .breadcrumbs .breadcrumbs-content .breadcrumb-nav li {

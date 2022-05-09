@@ -48,14 +48,14 @@
                         </div>
                         <div class="single-info">
                             <ul>
-                                <li>2005 Stokes isle Apt. 825, Venaville 10010, <br>United States<span><a href="#">Get Direction</a></span></li>
+                                <li>Off Airport Roundabout - Manhyia Road <br>Kumasi - Ghana<span><a href="#">Get Direction</a></span></li>
                             </ul>
                         </div>
                         <div class="single-info">
                             <ul>
                                 <li>
-                                    <span>+987-786-568-854-58</span>
-                                    <span>+9(786) 85-568-854-58</span>
+                                    <span>(233) 020 287 8723</span>
+                                    <span>(233) 546 678 8972</span>
                                     <span><a href="#">Make Call</a></span>
                                 </li>
                             </ul>

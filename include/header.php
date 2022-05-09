@@ -41,22 +41,24 @@
                                     <a class="page-scroll active" href="index.php">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll" href="about-us.php">About Us</a>
+                                    <a class="page-scroll" href="#">About Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll" href="about-us.php">Services</a>
+                                    <a class="page-scroll" href="#">Services</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="page-scroll dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Projects</a>
                                     <ul class="sub-menu collapse" id="submenu-1-3">
                                         <li class="nav-item"><a href="#">Diaspora City</a></li>
                                         <li class="nav-item"><a href="#">Serviced Communities</a></li>
+                                        <li class="nav-item"><a href="#">Why not Kumasi</a></li>
                                     </ul>
-                                </li><li class="nav-item">
+                                </li>
+                                <li class="nav-item">
                                     <a class="page-scroll" href="#">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll" href="contact.php">Contact</a>
+                                    <a class="page-scroll" href="#">Contact</a>
                                 </li>
                             </ul>
                         </div>
