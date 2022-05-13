@@ -10,7 +10,7 @@ body {
 
 @media only screen and (min-width:768px) and (max-width:991px) {
     .section {
-        padding: 60px 0
+        padding: 40px 0;
     }
     .section-title {
         margin-bottom: 50px;
