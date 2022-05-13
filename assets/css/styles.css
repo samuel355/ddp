@@ -1,10 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-:root{
-    --primary-color : #3a0ca3;
+:root {
+    --primary-color: #3a0ca3;
     --body-color: #f8f9fa;
 }
+
+div.tns-outer button {
+    display: none;
+}
+
 html {
     scroll-behavior: smooth
 }
@@ -84,6 +87,7 @@ h5 a,
 h6 a {
     color: inherit
 }
+
 h1 {
     font-size: 40px
 }
@@ -99,7 +103,6 @@ h1 {
         font-size: 36px
     }
 }
-
 
 h2 {
     font-size: 36px
@@ -1364,7 +1367,7 @@ p {
 
 .hero-slider {
     position: relative;
-    background: #3e54ff08 
+    background: #3e54ff08
 }
 
 .hero-slider .single-slider {
@@ -1389,8 +1392,9 @@ p {
     z-index: -1;
     border-radius: 0
 }
+
 @media only screen and (max-width: 767px) {
-    .slide-image{
+    .slide-image {
         display: none;
     }
 }
@@ -1461,7 +1465,6 @@ p {
 .hero-slider .hero-image {
     margin-top: 175px
 }
-
 
 .hero-slider .home-slider {
     position: relative
@@ -1580,7 +1583,6 @@ p {
 }
 
 .feature-right {
-    position: relative;
     background-image: url(../images/feature-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1619,55 +1621,6 @@ p {
     display: inline-block;
     font-size: 28px;
     padding-left: 5px
-}
-
-.feature-right .video-head .video:hover {
-    background: #3a0ca3;
-    color: #fff
-}
-
-.feature-right .video-head .video {
-    height: 80px;
-    width: 80px;
-    background: #fff;
-    color: #3a0ca3;
-    text-align: center;
-    line-height: 84px;
-    border-radius: 50%;
-    position: relative;
-    z-index: 5
-}
-
-.feature-right .video-head .video:before {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    -webkit-animation: play-btn-1 1.8s linear infinite;
-    -moz-animation: play-btn-1 1.8s linear infinite;
-    -o-animation: play-btn-1 1.8s linear infinite;
-    animation: play-btn-1 1.8s linear infinite
-}
-
-.feature-right .video-head .video:after {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    -webkit-animation: play-btn-2 1.5s linear infinite;
-    -moz-animation: play-btn-2 1.5s linear infinite;
-    -o-animation: play-btn-2 1.5s linear infinite;
-    animation: play-btn-2 1.5s linear infinite
 }
 
 .services {
@@ -4314,7 +4267,7 @@ blockquote h4 {
 }
 
 .footer .f-link ul li a:hover {
-    color:#3a0ca3;
+    color: #3a0ca3;
     padding-left: 5px
 }
 
