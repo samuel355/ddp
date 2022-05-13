@@ -303,6 +303,9 @@
 }
 
 @media only screen and (max-width:767px) {
+    a.nav-brand span {
+        font-size: 18px !important;
+    }
     .header .header-inner {
         padding: 20px 0
     }
