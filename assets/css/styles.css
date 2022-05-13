@@ -1635,7 +1635,7 @@ p {
 .services .single-service {
     text-align: left;
     position: relative;
-    padding: 130px 40px 45px;
+    padding: 40px 40px 45px;
     box-shadow: 0 5px 35px #0000000d;
     border-radius: 0;
     background: #fff;
@@ -1800,7 +1800,8 @@ span.circle {
     z-index: 2;
     overflow: hidden;
     margin-top: 15px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    height: 35vh;
 }
 
 .services .single-service img {
