@@ -17,10 +17,12 @@
             header_navbar.classList.remove("sticky");
         }
     };
+
     let navbarToggler = document.querySelector(".navbar-toggler");
     navbarToggler.addEventListener('click', function() {
         navbarToggler.classList.toggle("active");
     })
+
     tns({
         container: '.client-logo-carousel',
         autoplay: true,
@@ -45,7 +47,7 @@
         }
     });
     var wow = new WOW({
-        mobile: false
+        //mobile: false
     });
     wow.init();
     var cu = new counterUp({
