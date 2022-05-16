@@ -46,10 +46,12 @@
             }
         }
     });
+
     var wow = new WOW({
         //mobile: false
     });
     wow.init();
+
     var cu = new counterUp({
         start: 0,
         duration: 2000,
@@ -57,6 +59,7 @@
         interval: 100,
         append: " ",
     });
+
     cu.start();
     var elements = document.getElementsByClassName("portfolio-btn");
     for (var i = 0; i < elements.length; i++) {
@@ -72,6 +75,8 @@
         };
     }
 })();
+
+
 window.onscroll = function() {
     var header_navbar = document.querySelector(".navbar-area");
     var sticky = header_navbar.offsetTop;
@@ -87,12 +92,14 @@ window.onscroll = function() {
         backToTo.style.display = "none";
     }
 };
+
 Math.easeInOutQuad = function(t, b, c, d) {
     t /= d / 2;
     if (t < 1) return c / 2 * t * t + b;
     t--;
     return -c / 2 * (t * (t - 2) - 1) + b;
 };
+
 document.querySelector('.scroll-top').onclick = function() {
     scrollTo(document.documentElement);
 }
