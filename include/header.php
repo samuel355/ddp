@@ -14,7 +14,7 @@
                 </div>
                 <div class="col-lg-8 col-md-9 col-12">
                     <div class="toolbar-contact">
-                        <p><i class="lni lni-envelope"></i><a href="mailto:info@landandhomesconsult.org"><span class="__cf_email__" data-cfemail="abc2c5cdc4ebd2c4ded9dccec9d8c2dfce85c8c4c6">info@landandhomesconsult.org</span></a></p>
+                        <p><i class="lni lni-envelope"></i><a href="mailto:info@landandhomesconsult.com"><span class="__cf_email__" data-cfemail="abc2c5cdc4ebd2c4ded9dccec9d8c2dfce85c8c4c6">info@landandhomesconsult.org</span></a></p>
                         <p><i class="lni lni-phone"></i><a href="tel:+23320370203">(+233) 20 730 032</a></p>
                     </div>
                 </div>
