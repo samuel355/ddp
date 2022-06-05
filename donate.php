@@ -28,6 +28,7 @@
 </head>
 
 <body>
+    <!--
     <div class="preloader">
         <div class="preloader-inner">
             <div class="preloader-icon">
@@ -36,6 +37,7 @@
             </div>
         </div>
     </div>
+    -->
 
     <header class="header navbar-area">
         <div class="toolbar-area">
@@ -113,14 +115,14 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="breadcrumbs-content left">
-                        <h1 class="page-title">Contact Us</h1>
+                        <h1 class="page-title">Support</h1>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="breadcrumbs-content right">
                         <ul class="breadcrumb-nav">
                             <li><a href="index.html">Home</a></li>
-                            <li>Contact Us</li>
+                            <li>Support</li>
                         </ul>
                     </div>
                 </div>
@@ -132,123 +134,51 @@
         <div class="container">
             <div class="contact-inner">
                 <div class="row">
-                    <div class="col-xl-5 col-lg-5 col-md-4 col-12">
-                        <div class="contact-address-wrapper wow fadeInLeft" data-wow-delay="0.4s">
-                            <div class="inner-section-title">
-                                <h4>REACH US</h4>
-                                <h2 class="mt-3" style="font-weight: 400;">Catch Us Here</h2>
-                            </div>
-                            <div class="single-info">
-                                <ul>
-                                    <li>Off Airport Roundabout - Manhyia Road <br>Kumasi - Ghana</li>
-                                </ul>
-                            </div>
-                            <div class="single-info">
-                                <span><a href="#">Give us a call </a></span>
-                                <ul class="mt-3">
-                                    <li>
-                                        <span>(233) 020 287 8723</span>
-                                        <span>(233) 546 678 8972</span>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-7 col-md-8 col-12">
+                    <div class="col-md-6" style="margin: auto !important;">
                         <div class="contact-wrapper wow fadeInRight" data-wow-delay="0.6s">
-                            <h5 style="font-weight: 400; font-size: 22px">Send us a message and we will get in touch with you right away </h5>
-                            <form class="contacts-form mt-5" method="post">
+                            <h5 style="font-weight: 400; font-size: 22px"> Help with any amount to put smiles on less-endowed children</h5>
+                            <form class="contacts-form mt-5" id="paymentForm">
                                 <div class="row">
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-name">
-                                            <input type="text" name="name" placeholder="Your Name" required="required">
+                                            <input type="text" id="full_name" name="full_name" placeholder="Your Full Name">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-name">
-                                            <input type="text" name="phone" placeholder="Your Phone" required="required">
+                                            <input type="text" id="phone" name="phone" placeholder="Your Phone Number">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-email">
-                                            <input type="email" name="email" placeholder="Your Email" required="required">
+                                            <input type="email" id="email" name="email" placeholder="Your Email" require="required">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-name">
-                                            <input type="text" name="subject" placeholder="Your Subject" required="required">
+                                            <input type="number" id="total_price" name="amount" placeholder="Donation Amount" require="required">
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="contacts-icon contactss-message">
-                                            <textarea name="message" rows="7" placeholder="Your Message"></textarea>
+                                            <textarea id="comment" name="comment" rows="6" placeholder="Your Comment"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="contacts-button button">
-                                            <button type="submit" class="btn mouse-dir white-bg">Send Message <span class="dir-part"></span></button>
+                                            <button type="submit" onclick="payWithPaystack()" class="btn mouse-dir white-bg donate-btn">Donate<span class="dir-part"></span></button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
     </div>
-
-    <section class="map-section">
-        <div class="map-container">
-            <div class="mapouter">
-                <div class="gmap_canvas">
-                    <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=dichemso&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" margin-height="0" margin-width="0"></iframe><a href="https://www.online-timer.net">timer</a><br>
-                    <style>
-                        .mapouter {
-                            position: relative;
-                            text-align: right;
-                            height: 500px;
-                            width: 100%;
-                        }
-                    </style>
-                    <style>
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none!important;
-                            height: 500px;
-                            width: 100%;
-                        }
-                    </style>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="newsletter section">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-6 col-12">
-                    <div class="subscribe-text wow fadeInLeft" data-wow-delay=".3s">
-                        <h6>Sign up for Newsletter</h6>
-                        <p class="">Sign up to our newsletter so you don't miss out our great offers</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="subscribe-form wow fadeInRight" data-wow-delay=".5s">
-                        <form action="" method="get" target="_blank" class="newsletter-inner">
-                            <input name="email" placeholder="Your email address" class="common-input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'" required="" type="email">
-                            <div class="button">
-                                <button class="btn mouse-dir white-bg"> Subscribe Now <span class="dir-part"></span></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <hr>
 
     <footer class="footer">
         <div class="footer-middle">
@@ -316,15 +246,49 @@
         <i class="lni lni-chevron-up"></i>
     </a>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/tiny-slider.js"></script>
-    <script src="assets/js/glightbox.min.js"></script>
-    <script src="assets/js/imagesloaded.min.js"></script>
-    <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script> 
+    <script>
+        const paymentForm = document.getElementById('paymentForm');
+        paymentForm.addEventListener("submit", payWithPaystack, false);
+
+        function payWithPaystack(e) {
+            e.preventDefault();
+
+            //create .env for API
+            const apiKey = "pk_test_7ecb0ab49db164af0b248a6e96e6f44cf9a7491b",
+            full_name = document.getElementById("full_name").value,
+            email = document.getElementById("email").value,
+            phone = document.getElementById("phone").value; 
+            comment = document.getElementById("comment").value;  
+            
+            let handler = PaystackPop.setup({
+                key: apiKey,
+                email: document.getElementById("email").value,
+                amount: document.getElementById("total_price").value * 100,
+                currency: 'GHS',
+                ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+                // label: "Optional string that replaces customer email"
+
+                onClose: function(){
+                    alert('Transaction was not completed, window closed.');
+                },
+
+                callback: function(response){
+                    let message = 'Payment complete! Reference: ' + response.reference;
+                    alert(message);
+                }
+            });
+
+            handler.openIframe();
+        }
+    </script>
+
 </body>
 
 </html>
