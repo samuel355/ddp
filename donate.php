@@ -141,22 +141,22 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-name">
-                                            <input type="text" id="full_name" name="full_name" placeholder="Your Full Name">
+                                            <input type="text" id="full_name" name="full_name" placeholder="Your Full Name" required="required">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-name">
-                                            <input type="text" id="phone" name="phone" placeholder="Your Phone Number">
+                                            <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required="required">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-email">
-                                            <input type="email" id="email" name="email" placeholder="Your Email" require="required">
+                                            <input type="email" id="email" name="email" placeholder="Your Email" require="required" required="required">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-name">
-                                            <input type="number" id="total_price" name="amount" placeholder="Donation Amount" require="required">
+                                            <input type="number" id="total_amount" name="total_amount" placeholder="Donation Amount" require="required" required="required">
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -265,12 +265,13 @@
             full_name = document.getElementById("full_name").value,
             email = document.getElementById("email").value,
             phone = document.getElementById("phone").value; 
+            amount = document.getElementById("total_amount").value; 
             comment = document.getElementById("comment").value;  
             
             let handler = PaystackPop.setup({
                 key: apiKey,
                 email: document.getElementById("email").value,
-                amount: document.getElementById("total_price").value * 100,
+                amount: document.getElementById("total_amount").value * 100,
                 currency: 'GHS',
                 ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
                 // label: "Optional string that replaces customer email"
@@ -280,8 +281,30 @@
                 },
 
                 callback: function(response){
-                    let message = 'Payment complete! Reference: ' + response.reference;
-                    alert(message);
+                    const data = response.reference;
+                    //let message = 'Payment complete! Reference: ' + response.reference;
+                    //alert(message);
+
+                    $.ajax({
+                        method: 'GET',
+                        url: 'check-pay.php',
+                        data: {
+                            ref: data,
+                            email: email,
+                            full_name: full_name,
+                            phone: phone,
+                            amount: amount,
+                            comment: comment,
+                        },
+
+                        success: function(data){
+                            if(data === 'success'){
+                                window.location.href = 'success-pay.php';
+                            }else{
+                                console.log(data);
+                            }
+                        }
+                    })
                 }
             });
 
