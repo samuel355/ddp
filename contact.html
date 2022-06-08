@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="The Diaspora Dream Project is a special real estate endeavour tailored to cater for the needs of Africans and other interested persons abroad. ">
     <meta name="Designer" content="Samuel Osei Adu -> addsamuel355@gmail.com">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/ddp.svg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -158,21 +158,25 @@
                     <div class="col-xl-7 col-lg-7 col-md-8 col-12">
                         <div class="contact-wrapper wow fadeInRight" data-wow-delay="0.6s">
                             <h5 style="font-weight: 400; font-size: 22px">Send us a message and we will get in touch with you right away </h5>
-                            <form class="contacts-form mt-5" method="post">
+                            <form class="contacts-form mt-5" method="POST">
+
                                 <div class="row">
+                                    <div class="col-lg-12">
+                                        <div style="display: none;" class="alert alert-danger text-center errorMsg"> heere</div>
+                                    </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-name">
-                                            <input type="text" name="name" placeholder="Your Name" required="required">
+                                            <input type="text" id="name" name="name" placeholder="Your Name" required="required">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-name">
-                                            <input type="text" name="phone" placeholder="Your Phone" required="required">
+                                            <input type="text" id="phone" name="phone" placeholder="Your Phone" required="required">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-email">
-                                            <input type="email" name="email" placeholder="Your Email" required="required">
+                                            <input type="email" id="email" name="email" placeholder="Your Email" required="required">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
@@ -182,7 +186,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="contacts-icon contactss-message">
-                                            <textarea name="message" rows="7" placeholder="Your Message"></textarea>
+                                            <textarea required="required" id="message" name="message" rows="7" placeholder="Your Message"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -224,8 +228,6 @@
             </div>
         </div>
     </section>
-
-
 
     <section class="newsletter section">
         <div class="container">
@@ -325,6 +327,20 @@
     <script src="assets/js/imagesloaded.min.js"></script>
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.contacts-form').on('submit', function(e) {
+                e.preventDefault();
+
+                $.ajax({
+                    data: $('.contact-form').serialize(),
+                })
+
+            })
+
+        })
+    </script>
 </body>
 
 </html>

@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="The Diaspora Dream Project is a special real estate endeavour tailored to cater for the needs of Africans and other interested persons abroad. ">
     <meta name="Designer" content="Samuel Osei Adu -> addsamuel355@gmail.com">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/ddp.svg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
