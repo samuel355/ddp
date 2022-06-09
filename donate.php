@@ -157,7 +157,9 @@
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-name">
                                             <input type="number" id="total_amount" name="total_amount" placeholder="Donation Amount" require="required" required="required">
+                                            <span class="text-info amount-note"></span>
                                         </div>
+                                        
                                     </div>
                                     <div class="col-12">
                                         <div class="contacts-icon contactss-message">
@@ -310,6 +312,10 @@
 
             handler.openIframe();
         }
+
+        $('#total_amount').on('keyup', function(e){
+            $('.amount-note').html('Amount is in Ghana Cedis')
+        })
     </script>
 
 </body>
