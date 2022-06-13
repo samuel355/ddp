@@ -545,6 +545,7 @@ body {
         border: none
     }
     .testimonials .single-testimonial .client1 {
+        margin-top: 1rem;
         height: 197px;
         width: 100%
     }
