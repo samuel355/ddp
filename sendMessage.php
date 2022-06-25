@@ -27,16 +27,17 @@
             "Reply-To: ".$email."" . "\r\n" .
             "X-Mailer: PHP/" . phpversion();
             
-            $subject = "Godave Plus Company LTD. ";
+            $subject = "Diaspora Dream Project ";
             
             
             $messageSend = " 
                 <html>
                     <body>
-                        <h4> Message from Godave plus website </h4> <br>
+                        <h4> Message from Diapora Dream Project website </h4> <br>
                         Full Name:  ".$firstname. ' '. $lastname."<br>
                         Email: ".$email."<br>
                         Phone : ".$phone." <br> <br><br>
+                        Subject : ".$subject." <br> <br><br>
                         <h4> Message</h4> <br>
                         ".$message."
                     </body>
