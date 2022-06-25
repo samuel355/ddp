@@ -34,7 +34,7 @@
                 <html>
                     <body>
                         <h4> Message from Diapora Dream Project website </h4> <br>
-                        Full Name:  ".$firstname. ' '. $lastname."<br>
+                        Full Name:  ".$fullname."<br>
                         Email: ".$email."<br>
                         Phone : ".$phone." <br> <br><br>
                         Subject : ".$subject." <br> <br><br>
