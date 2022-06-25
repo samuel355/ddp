@@ -96,7 +96,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll active" href="contact.html">Contact </a>
+                                        <a class="page-scroll active" href="contact.php">Contact </a>
                                     </li>
                                 </ul>
                             </div>

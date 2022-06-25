@@ -94,7 +94,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll active" href="contact.html">Contact </a>
+                                        <a class="page-scroll active" href="contact.php">Contact </a>
                                     </li>
                                 </ul>
                             </div>
@@ -166,27 +166,27 @@
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-name">
-                                            <input type="text" id="name" name="name" placeholder="Your Name" required="required">
+                                            <input type="text" id="name" name="name" placeholder="Your Name" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-name">
-                                            <input type="text" id="phone" name="phone" placeholder="Your Phone" required="required">
+                                            <input type="text" id="phone" name="phone" placeholder="Your Phone" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-email">
-                                            <input type="email" id="email" name="email" placeholder="Your Email" required="required">
+                                            <input type="email" id="email" name="email" placeholder="Your Email" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
                                         <div class="contacts-icon contactss-name">
-                                            <input type="text" name="subject" placeholder="Your Subject" required="required">
+                                            <input type="text" name="subject" placeholder="Your Subject" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="contacts-icon contactss-message">
-                                            <textarea required="required" id="message" name="message" rows="7" placeholder="Your Message"></textarea>
+                                            <textarea id="message" name="message" rows="7" placeholder="Your Message" required></textarea>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -295,7 +295,6 @@
         <i class="lni lni-chevron-up"></i>
     </a>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
@@ -304,6 +303,7 @@
     <script src="assets/js/imagesloaded.min.js"></script>
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -311,7 +311,19 @@
                 e.preventDefault();
 
                 $.ajax({
-                    data: $('.contact-form').serialize(),
+                    data: $('.contacts-form').serialize(),
+                    method: 'POST',
+                    url: 'sendMessage.php',
+
+                    success: function(data){
+                        if(data == 'success'){
+                            window.location.href = "success-message.html";
+                            
+                        }else{
+                            alert("Sorry Your message could not be delivered. Try again later");
+                            window.location.reload(true);
+                        }
+                    }
                 })
 
             })
