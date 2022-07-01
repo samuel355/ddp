@@ -54,7 +54,7 @@
                     <div class="col-lg-8 col-md-9 col-12">
                         <div class="toolbar-contact">
                             <p><i class="lni lni-envelope"></i><a href="mailto:info@diasporadreamproject.com"><span class="__cf_email__">info@diasporadreamproject.com</span></a></p>
-                            <p><i class="lni lni-phone"></i><a href="tel:+23320370203">(+233) 20 730 032</a></p>
+                            <p><i class="lni lni-phone"></i><a href="">(+233) 20 730 032</a></p>
                         </div>
                     </div>
                 </div>
