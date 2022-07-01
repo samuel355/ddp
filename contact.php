@@ -265,7 +265,7 @@
                         <div class="single-footer f-contact f-link">
                             <h3>Contact Us</h3>
                             <ul class="footer-contact">
-                                <li><i class="lni lni-phone"></i> <a href="#">+233 (245) 6789</a></li> <br>
+                                <li><i class="lni lni-phone"></i> <a href="#">+233 (0) 20 073 7032 / 0322 008 282</a></li> <br>
                                 <li><i class="lni lni-envelope"></i> <a href=""><span class="__cf_email__" data-cfemail="bac9cfcacad5c8cefaddd7dbd3d694d9d5d7">info@diasporadreamproject.com</span></a> </li>
                                 <li><i class="lni lni-map-marker"></i> Dichmeso - Kumasi. Airport Roundabout to Manhyia Road</li>
                                 <li><i class="lni lni-world"></i> <a href="#">diasporadreamproject.com</a></li>

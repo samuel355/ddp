@@ -15,7 +15,7 @@
         $insert = mysqli_query($con, $query);
 
         echo 'success';
-        /*
+        
         if($insert){
             //send message on live server
             echo 'success';
@@ -48,7 +48,7 @@
         }else{
             echo 'Sorry your message could not send. Try again later';
         }
-        */
+        
     }else{
         echo "message could not be delivered";
     }
